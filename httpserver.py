@@ -38,7 +38,7 @@ while True:
         content = fin.read()
         fin.close()
         
-        response = 'HTTP/1.0 200 OK\n\n' + content
+        response = "HTTP/1.0 200 OK\n\n" + content
         
     except FileNotFoundError:
         response = 'HTTP/1.0 404 NOT FOUND\n\nFile Not Found'
